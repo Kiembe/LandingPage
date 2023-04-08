@@ -1,0 +1,148 @@
+@media screen and (max-width:950px){
+    header .container .nav_bar{
+        display: none !important;
+    }
+
+    header .container .mobile_menu{
+        display: initial;
+
+    }
+
+    header .container {
+        padding: 1.5rem;
+    }
+
+    header .container .mobile_menu i{
+        font-size: 3.5rem;
+        color: #333;
+    }
+
+    .nav_bar-mobile{
+        /* display: none; */
+        position: absolute;
+        width: 80%;
+        height: 100vh;
+        left: 0;
+        background: #efefef;
+        top: 0;
+        z-index: 1;
+        box-shadow: 0rem 0rem 1rem rgba(0,0,0,0.5);
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .nav_bar-mobile li{
+        font-size: 2.4rem;
+        padding: 1rem;
+
+    }
+
+    header .container .mobile_menu .nav_bar-mobile.show{
+        /* display: initial !important; */
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    .banner{
+        background-size: 120vh 200vw;
+    }
+
+    .banner .container{
+        backdrop-filter: blur(0.8rem);
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .banner .container h1{
+        font-size: 4rem;
+    }
+
+    .banner .container p{
+        font-size: 2rem;
+    }
+
+    .banner .container .more p,
+    .banner .container .more i{
+        color: #fff;
+    }
+
+    .banner .container .more{
+        left: 6rem;
+        bottom: 5rem;
+    }
+
+    .review .container,
+    .object .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .progress .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .review,
+    .progress,
+    .object,
+    .locate{
+        padding: 7rem 0rem;
+    }
+
+    .review .container .left,
+    .review .container .right,
+    .progress .container .left,
+    .progress .container .right,
+    .object .container .left,
+    .object .container .right{
+        width: 100%;
+        padding: 0rem 2rem;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .review .container .left{
+        text-align: center;
+    }
+
+    .review .container img,
+    .progress .container img,
+    .object .container img{
+        width: 95%;
+        height: 23rem !important;
+    }
+
+
+    .locate .container .cards {
+        display: flex !important;
+        flex-direction: column !important;
+
+    }
+
+    .chat{
+        color: #fff;
+        font-size: 3rem;
+        background-color: var(--primary-color);
+        padding: 1rem 1.1rem;
+        border-radius: 50%;
+        border: none;
+        display: initial;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 1;
+        animation:  rung 3s ease infinite alternate;
+    }
+
+    @keyframes rung {
+        0%{
+            transform: scale(0.9) rotate(-45deg);
+        }
+        100%{
+            transform: scale(1) rotate(0);
+        }
+    }
+}
